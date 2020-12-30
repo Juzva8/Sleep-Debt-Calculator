@@ -2,15 +2,15 @@ const getSleepHours = day => {
     if (day === 'Sunday') {
         return 8;
     } else if (day === 'Monday') {
-        return 6;
+        return 8;
     } else if (day === 'Tuesday') {
-        return 6;
+        return 8;
     } else if (day === 'Wednesday') {
-        return 7;
+        return 8;
     } else if (day === 'Thursday') {
         return 8;
     } else if (day === 'Friday') {
-        return 9;
+        return 10;
     } else if (day === 'Saturday') { return 6; } else { return 'Please enter a valid day of the week.'; }
 };
 
