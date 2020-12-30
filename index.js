@@ -14,6 +14,22 @@ getSleepHours = day => {
     } else if (day === 'sunday') {
         return 10;
     }
-
 };
-console.log(getSleepHours('sunday'));
+
+const getActualSleepHours = () =>
+    getSleepHours('Sunday') +
+    getSleepHours('Monday') +
+    getSleepHours('Tuesday') +
+    getSleepHours('Wednesday') +
+    getSleepHours('Thursday') +
+    getSleepHours('Friday') +
+    getSleepHours('Saturday');
+
+
+const getIdealSleepHours = () => {
+    const idealHours = 8;
+    return idealHours * 7;
+};
+
+let actualSleepHours = getActualSleepHours();
+let idealSleepHours = getIdealSleepHours();
